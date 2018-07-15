@@ -4,7 +4,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.capitalone.squadron.chatbot.service.SquadronChatBotService;
-import com.capitalone.squadron.chatbot.model.SquadronChatBotModel;
+
 
 import java.io.StringWriter;
 
