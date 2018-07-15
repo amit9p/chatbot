@@ -11,6 +11,8 @@
 		<version>1.5.6.RELEASE</version>
 	</parent>
 
+    <packaging>jar</packaging>
+
     <properties>
         <java.version>1.8</java.version>
         <start-class>com.capitalone.squadron.chatbot.SquadronChatBotClient</start-class>
@@ -39,10 +41,25 @@
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+        <!-- https://mvnrepository.com/artifact/javax.json/javax.json-api -->
+        <dependency>
+            <groupId>javax.json</groupId>
+            <artifactId>javax.json-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.glassfish/javax.json -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.0.4</version>
+        </dependency>
 
 
 
-	</dependencies>
+
+
+    </dependencies>
 
   <build>
         <plugins>
@@ -90,6 +107,8 @@
            </resource>
        </resources>
     </build>
+
+
 
 
 </project>
