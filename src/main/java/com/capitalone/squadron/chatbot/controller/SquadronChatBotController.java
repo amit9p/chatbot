@@ -34,7 +34,7 @@ public class SquadronChatBotController {
     }
 
 
-    @RequestMapping(value = "/chatbotResponse/{question}", method = {RequestMethod.GET})
+    @RequestMapping(value = "/chatbotResponse/{question}", method = {RequestMethod.GET}, produces = MediaType.APPLICATION_JSON_VALUE)
     public String getResponseFromBot(@PathVariable("question") String question) throws Exception {
 
         JsonObjectBuilder jsonBuilder = Json.createObjectBuilder();
